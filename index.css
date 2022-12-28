@@ -1,0 +1,112 @@
+
+body{
+margin: 0px;
+padding: 0px;
+background: #f8fafa;
+font-family: 'Amiri', serif;
+}
+        a {
+            text-decoration: none;
+        }
+
+        .et-hero-tabs,
+        .et-slide {
+            display: -webkit-box;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+            background: rgb(245, 245, 245);
+            text-align: center;
+            padding: 0 2em;
+        }
+
+        .et-hero-tabs h1,
+        .et-slide h1 {
+            color: #1f2c77;
+            font-size: 3rem;
+            margin: 0;
+            font-family: 'Reem Kufi', sans-serif;
+        }
+
+        .et-hero-tabs h3,
+        .et-slide h3 {
+            font-size: 2rem;
+            opacity: 0.9;
+
+        }
+
+        .et-hero-tabs-container {
+            display: -webkit-box;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            flex-direction: row;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 70px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            background: #fff;
+            z-index: 10;
+        }
+
+        .et-hero-tabs-container--top {
+            position: fixed;
+            top: 0;
+        }
+
+        .et-hero-tab {
+            display: -webkit-box;
+            display: flex;
+            -webkit-box-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-flex: 1;
+            flex: 1;
+            color: rgb(15, 1, 1);
+            -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            font-size: 0.9rem;
+        }
+        .et-hero-tab:hover {
+            color: white;
+            background: rgba(192, 218, 218, 0.8);
+            -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+        }
+
+        .et-hero-tab-slider {
+            position: absolute;
+            bottom: 0;
+            width: 0;
+            height: 6px;
+            background: #66B1F1;
+            -webkit-transition: left 0.3s ease;
+            transition: left 0.3s ease;
+        }
+
+        @media (min-width: 800px) {
+
+            .et-hero-tabs h1,
+            .et-slide h1 {
+                font-size: 4rem;
+            }
+
+            .et-hero-tabs h3,
+            .et-slide h3 {
+                font-size: 1rem;
+            }
+
+            .et-hero-tab {
+                font-size: 1.5rem;
+            }
+        }
+
